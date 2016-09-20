@@ -15,13 +15,6 @@
 \definecolor{KauWhite}{cmyk}{0,0,0,0}
 \definecolor{KauLightGray}{cmyk}{0,0,0,0.4}
 
-% To use with pdflatex,
-% comment the fontspec package at the top
-%\usepackage{sourceserifpro}
-%\usepackage{sourcesanspro}
-%\usepackage{sourcecodepro}
-\usepackage[scaled]{helvet}
-
 % set colours
 \setbeamercolor{itemize item}{fg=KauBlue}
 \setbeamercolor{enumerate item}{fg=KauBlue}
@@ -29,6 +22,7 @@
 \setbeamercolor{section in toc}{fg=KauBlack}
 
 % set fonts
+\usepackage[scaled]{helvet}
 \setbeamerfont{itemize/enumerate body}{size=\large}
 \setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
 \setbeamerfont{itemize/enumerate subsubbody}{size=\small}
@@ -121,7 +115,7 @@
 
 			% draw the actual text
 			\node[anchor=south,text width=\slidewidth-1cm,inner xsep=0.5cm] at (0.5\slidewidth,4cm) {\color{KauBlack}\Huge\textbf{\inserttitle}};
-			\node[anchor=north east,text width=\slidewidth-1cm,align=left] at (\slidewidth-0.4cm,4cm) {\color{KauBlack}\tiny\insertsubtitle};
+			\node[anchor=north east,text width=\slidewidth-1cm,align=left] at (\slidewidth+0.4cm,3.8cm) {\color{KauBlack}\small\insertsubtitle};
 			%\node[above] at(0.5\slidewidth,2.3cm) {\color{KauBlack}\tiny by};
 			\node at (0.5\slidewidth,1.5cm) {\color{KauBlack}\LARGE\insertauthor};
 
